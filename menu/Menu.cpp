@@ -1,6 +1,7 @@
 #include "Menu.h"
 
 Menu::Menu(){	
+	
 	*(menu_main_elements+0) = {"play \n"};
 	*(menu_main_elements+1) = {"settings \n"};
 	*(menu_main_elements+2) = {"exit \n"};
