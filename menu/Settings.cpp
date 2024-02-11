@@ -6,18 +6,18 @@ Settings::Settings(){
 
 }
 
-bool Settings::control_of_entered_value(int number_of_array_elements /* , int choice */){
-	int choice_usr{};
+bool Settings::control_of_entered_value(Menu obiekt, int number_of_array_elements  , int& choice_usr ){
 	std::cout << "put in place choice: ";
-	if(!(std::cin >> choice_usr) || choice_usr < 1 || choice_usr > number_of_array_elements){
+	std::cin >> choice_usr;
+	if(choice_usr < 1 || choice_usr > number_of_array_elements){
 		std::cout << "give me correct value 1.." << number_of_array_elements<< "\n";
-		//clear_iostream();
-		Menu menu;
-		menu.set_choice(choice_usr);
+		//clear_iostream
 		return false;
 	}
-	else
+	else{
+		obiekt.set_choice(obiekt, choice_usr);
 		return true;
+	}
 }
 
 void Settings::clear_iostream() const{
