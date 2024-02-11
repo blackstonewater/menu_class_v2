@@ -13,7 +13,7 @@ bool Settings::control_of_entered_value(int number_of_array_elements /* , int ch
 		std::cout << "give me correct value 1.." << number_of_array_elements<< "\n";
 		//clear_iostream();
 		Menu menu;
-		menu.choice = choice_usr;
+		menu.set_choice(choice_usr);
 		return false;
 	}
 	else

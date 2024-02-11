@@ -7,11 +7,11 @@ class Play
 public:
 	Play();
 	void print_elements_play() const;
-		bool control_back_t() const;
-		bool control_back_t(bool contol_back_decision);
 	bool control_of_entered_value(int number_of_array_elements);
-	int get_number_of_array_play() const;
-	~Play();
+	
+	int get_number_of_array_play() const{
+		return elements_of_play;
+	}
 
 private:
 	int const elements_of_play{3};

@@ -14,6 +14,3 @@ void Menu::print_elements_menu() const{
 	}
 }
 
-int Menu::get_number_of_array_menu() const{
-	return elements_of_menu;
-}
