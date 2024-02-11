@@ -13,17 +13,11 @@ int main(){
 
 
 	for(;;){
-		// void() print elements menu
-		menu.print_elements_menu();		
-		// void() conttrol of the entered value
-		//bool control_back{false};
+		menu.print_elements_menu();
 		int choice_usr{};
-		do{
+		//do{
 			if(!(settings.control_of_entered_value(menu, menu.get_number_of_array_menu(), choice_usr))){
-
-				// czyści buffor
 				settings.clear_iostream();
-				//menu.set_control_back(true);
 			}	
 			else{
 				if(choice_usr == 1){
@@ -35,6 +29,6 @@ int main(){
 				else
 					exit(0);
 			}
-		}while(!menu.get_control_back());
+		//}while(!menu.get_control_back());
 	}
 }

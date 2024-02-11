@@ -11,11 +11,10 @@ bool Settings::control_of_entered_value(Menu obiekt, int number_of_array_element
 	std::cin >> choice_usr;
 	if(choice_usr < 1 || choice_usr > number_of_array_elements){
 		std::cout << "give me correct value 1.." << number_of_array_elements<< "\n";
-		//clear_iostream
 		return false;
 	}
 	else{
-		obiekt.set_choice(obiekt, choice_usr);
+		//obiekt.set_choice(obiekt, choice_usr);
 		return true;
 	}
 }
